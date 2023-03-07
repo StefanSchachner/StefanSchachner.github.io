@@ -19,7 +19,7 @@ body {
 }
 
 
-/*
+
 @media (max-width: 1280px) {
     .wrapper {
         margin-left: 20%;
@@ -28,6 +28,7 @@ body {
     }
 }
 
+/*
 @media (max-width: 1090px) {
     .wrapper {
         margin-right: 50px;
