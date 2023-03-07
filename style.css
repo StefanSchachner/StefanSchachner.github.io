@@ -28,6 +28,16 @@ body {
     }
 }
 
+@media (max-width: 1090px) {
+    .wrapper {
+        margin-right: 2%;
+        margin-right: 2%;
+        padding: 2%;
+    }
+}
+
+
+
 /*-------- Nav-Leiste ------------*/
 
 header {
