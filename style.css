@@ -20,6 +20,12 @@ body {
     
 }
 
+.wrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+}
+
 /*-------- Nav-Leiste ------------*/
 
 header {
@@ -101,7 +107,7 @@ header {
         right: -100%;
         width: 270px;
         height: 29vh;
-        background: #ff514e2a;
+        background: #ff514e17;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
