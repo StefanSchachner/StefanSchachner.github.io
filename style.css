@@ -1,3 +1,4 @@
+/*-------- General Settings, wrapper, body ------------*/
 *{
     padding: 0;
     margin: 0;
@@ -18,26 +19,11 @@ body {
     text-align: center;
 }
 
-
-
-
-    .wrapper {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 2%;
-    }
-
-
-/*
-@media (max-width: 1090px) {
-    .wrapper {
-        margin-right: 50px;
-        margin-right: 50px;
-        padding: 25px;
-    }
+.wrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
 }
-*/
-
 
 /*-------- Nav-Leiste ------------*/
 
@@ -184,6 +170,40 @@ p {
     border: 3px solid white;
 }
 
+/*-------- Div-Boxes ------------*/
 
+.characterBoxSingle {
+    margin: 1%;
+    border-radius: 50px;
+}
+
+.characterBoxMultiple {
+    display: flex;
+    border-radius: 51px;
+
+
+}
+
+.threeColumns {
+    width: 33.3%;
+}
+
+/*-------- Images ------------*/
+
+.characterImage {
+    width: 80%;
+    height: 50%;
+
+    margin: 1%;
+    border-radius: 50px;
+}
+
+.characterImageSmall {
+    width: 70%;
+    height: 50%;
+
+    margin: 1%;
+    border-radius: 50px;
+}
 
 
