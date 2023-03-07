@@ -19,13 +19,29 @@ body {
     text-align: center;
 }
 
-@media (max-width: 1280px) {   
+.wrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+}
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
+}
+
+
+/*  
     .wrapper {
         margin-left: 20%;
         margin-right: 20%;
         padding: 2%;
-    }
-}
+    }*/
 
 /*-------- Nav-Leiste ------------*/
 
@@ -88,6 +104,11 @@ header {
 }
 
 @media (max-width: 1280px) {
+    .wrapper {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 2%;
+    }
     header {
         padding: 14px 2%;
         transition: .2s;
@@ -99,6 +120,11 @@ header {
 }
 
 @media (max-width: 1090px) {
+    .wrapper {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
     #menu-icon {
         display: block;
     }
