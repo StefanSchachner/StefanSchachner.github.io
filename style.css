@@ -25,23 +25,16 @@ body {
     padding: 2%;
 }
 
-
-
 @media (max-width: 1080px) {
     .wrapper {
         margin-left: 0%;
         margin-right: 0%;
         padding: 0%;
     }
+    .threeColumns {
+        width: 50%;
+    }
 }
-
-
-/*  
-    .wrapper {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 2%;
-    }*/
 
 /*-------- Nav-Leiste ------------*/
 
@@ -208,6 +201,8 @@ p {
 .characterBoxMultiple {
     display: flex;
     border-radius: 51px;
+
+    margin-bottom: 3%;
 
 
 }
