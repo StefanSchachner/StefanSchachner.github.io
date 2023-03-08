@@ -31,8 +31,8 @@ body {
         margin-right: 0%;
         padding: 0%;
     }
-    .threeColumns {
-        width: 50%;
+    .characterBoxMultiple {
+        margin-bottom: 5%;
     }
 }
 
@@ -208,7 +208,7 @@ p {
 }
 
 .threeColumns {
-    width: 33.3%;
+    width: 50%;
 }
 
 /*-------- Images ------------*/
@@ -219,14 +219,23 @@ p {
 
     margin: 1%;
     border-radius: 50px;
+
+
 }
 
 .characterImageSmall {
-    width: 70%;
-    height: 50%;
-
+    width: 200px;
+    height: 150px;
     margin: 1%;
     border-radius: 50px;
+
+    transition: width .5s, height .5s;
+}
+
+
+.characterImageSmall:hover {
+    width: 225px;
+    height: 175px;
 }
 
 
