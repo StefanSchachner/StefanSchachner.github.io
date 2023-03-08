@@ -31,9 +31,6 @@ body {
         margin-right: 0%;
         padding: 0%;
     }
-    .characterBoxMultiple {
-        margin-bottom: 5%;
-    }
 }
 
 /*-------- Nav-Leiste ------------*/
@@ -223,9 +220,24 @@ p {
 
 }
 
+@media (max-width: 1080px) {
+    .characterImageSmall {
+        width: 200px;
+        height: 150px;
+        margin: 1%;
+        border-radius: 50px;
+    
+        transition: width .5s, height .5s;
+    }
+    .characterImageSmall:hover {
+        width: 225px;
+        height: 175px;
+    }
+}
+
 .characterImageSmall {
-    width: 200px;
-    height: 150px;
+    width: 225px;
+    height: 175px;
     margin: 1%;
     border-radius: 50px;
 
@@ -234,8 +246,8 @@ p {
 
 
 .characterImageSmall:hover {
-    width: 225px;
-    height: 175px;
+    width: 250px;
+    height: 200px;
 }
 
 
