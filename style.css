@@ -237,21 +237,6 @@ p {
     height: 45%;
 }
 
-@media (max-width: 1080px) {
-    .characterImageSmall {
-        width: 200px;
-        height: 150px;
-        margin: 1%;
-        border-radius: 50px;
-    
-        transition: width .5s, height .5s;
-    }
-    .characterImageSmall:hover {
-        width: 225px;
-        height: 175px;
-    }
-}
-
 .characterImageSmall {
     width: 200px;
     height: 150px;
@@ -264,5 +249,3 @@ p {
     width: 225px;
     height: 175px;
 }
-
-
