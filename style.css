@@ -1,69 +1,51 @@
 /*-------- General Settings, wrapper, body ------------*/
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
   color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Century Gothic;
-  /*
-  background-image: linear-gradient(45deg, #1c1133, #523764);
-  */
-  background: linear-gradient(45deg,#120f35,#33162c);
-  color: rgba(195, 141, 124, 255);
-  color: white;
-
-  background-size: cover;
   text-align: center;
+  color: white;
+  background: linear-gradient(45deg,#120f35,#33162c);
 }
 
 .wrapper {
   margin-left: 20%;
   margin-right: 20%;
   padding: 2%;
-
-
 }
 
-@media (max-width: 1080px) {
-  .wrapper {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0%;
-  }
+table {
+  border-collapse: collapse;
+  justify-content: center;
+  align-items: center;
 }
 
-.world {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9997;
-  pointer-events: none;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 6s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+table tr td {
+  padding: 4%;
+  
 }
 
-/*-------- Nav-Leiste ------------*/
 
+/*------------ Nav-Leiste ------------*/
 header {
   color: white;
-  position: fixed;
+  background: transparent;
   width: 100%;
   top: 0;
   right: 0;
   z-index: 1000;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
   padding: 28px 12%;
   transition: all 0.5s ease-in-out;
 }
@@ -126,26 +108,33 @@ header {
   }
 }
 
-@media (max-width: 1090px) {
+  @media (max-width: 1080px) {
+  h1 {
+    font-size: 170%;
+    font-weight: lighter;
+    color: #9e7364;
+    margin-top: 15%;
+  }
+
   .wrapper {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+  
   }
   #menu-icon {
     display: block;
   }
   .navbar {
-    position: absolute;
+    background: #ff514e17;
     top: 100%;
     right: -100%;
     width: 270px;
     height: 29vh;
-    background: #ff514e17;
+    border-radius: 10px;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: flex-start;
-    border-radius: 10px;
     transition: all 0.5s ease-in-out;
   }
   .navbar a {
@@ -164,16 +153,92 @@ header {
   .navbar.open {
     right: 2%;
   }
+  .characterImageSmall {
+    width: 200px;
+    height: 150px;
+    margin: 1%;
+    border-radius: 30px;
+    transition: width 0.5s, height 0.5s;
+  }
+  .characterImageSmall:hover {
+    width: 225px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 170%;
+    font-weight: lighter;
+    color: #9e7364;
+    margin-top: 15%;
+  }
+
+  .wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    background: #ff514e17;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar a:hover {
+    color: #ff524e;
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    color: #ff524e;
+  }
+  .navbar.open {
+    right: 2%;
+  }
+
+  .characterBoxMultiple {
+    margin-bottom: 20%;
+  }
+
+  .characterImageSmall {
+    width: 125px;
+    height: 75px;
+    margin: 1%;
+    border-radius: 30px;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .characterImageSmall:hover {
+    width: 140px;
+    height: 90px;
+  }
+
+  
 }
 
 /*-------- Headlines, texts, paragraphs ------------*/
 
 h1 {
-  margin-top: 15%;
-
   font-size: 370%;
   font-weight: lighter;
   color: #9e7364;
+  margin-top: 15%;
 }
 
 p {
@@ -187,23 +252,34 @@ p {
 
 .hoverButton {
   color: white;
+  background-color: #ff524e;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 8px;
-
   border: 3px solid #ff524e;
   border-radius: 50px;
-
-  background-color: #ff524e;
-
   transition: color 0.5s, background-color 0.5s;
 }
 
 .hoverButton:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.hoverLink {
+  font-size: larger;
+  color: #ff524e;
+  transition: color 0.5s;
+}
+
+.hoverLink:hover {
+  color: white;
+}
+
+.hoverLinkNonHover {
+  font-size: larger;
 }
 
 /*-------- Div-Boxes ------------*/
@@ -216,7 +292,6 @@ p {
 .characterBoxMultiple {
   display: flex;
   border-radius: 51px;
-
   margin-bottom: 3%;
 }
 
@@ -241,10 +316,8 @@ p {
 .characterImage {
   width: 70%;
   height: 40%;
-
   margin: 1%;
   border-radius: 30px;
-
   transition: width 0.5s, height 0.5s;
 }
 
@@ -253,15 +326,17 @@ p {
   height: 45%;
 }
 
-.characterImageSmall {
-  width: 200px;
-  height: 150px;
-  margin: 1%;
-  border-radius: 30px;
+@media (min-width: 1080px) {
+  .characterImageSmall {
+    width: 200px;
+    height: 150px;
+    margin: 1%;
+    border-radius: 30px;
+    transition: width 0.5s, height 0.5s;
+  }
+  .characterImageSmall:hover {
+    width: 225px;
+    height: 175px;
+  }
+}
 
-  transition: width 0.5s, height 0.5s;
-}
-.characterImageSmall:hover {
-  width: 225px;
-  height: 175px;
-}
